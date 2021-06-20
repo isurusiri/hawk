@@ -9,10 +9,11 @@ import (
 )
 
 var (
-	tcp       = flag.Bool("tcp", false, "scannes ports listening via tcp")
-	udp       = flag.Bool("udp", false, "scannes ports listening via udp")
-	all       = flag.Bool("all", true, "scannes all ports")
-	help      = flag.Bool("help", false, "display the help options")
+	tcp     = flag.Bool("tcp", false, "scannes ports listening via tcp")
+	udp     = flag.Bool("udp", false, "scannes ports listening via udp")
+	all     = flag.Bool("all", true, "scannes all ports")
+	help    = flag.Bool("help", false, "display the help options")
+	svcmode = flag.Bool("svcmode", false, "specifies to enable service mode")
 )
 
 func main() {
